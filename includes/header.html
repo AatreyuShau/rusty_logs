@@ -1,0 +1,12 @@
+<header>
+    <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    <nav>
+      <ul>
+        <li><a href="{{ site.baseurl }}/">Home</a></li>
+        {% for mod in site.mods %}
+          <li><a href="{{ site.baseurl }}/mods/{{ mod }}">{{ mod }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+  

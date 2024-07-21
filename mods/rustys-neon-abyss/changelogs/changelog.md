@@ -1,3 +1,6 @@
-# Changelog 1
+---
+date: 2024-07-21
+---
+
 - Initial release of Rusty's Neon Abyss.
-- Added new neon effects.
+- Added neon lights and abyssal creatures.

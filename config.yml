@@ -1,2 +1,6 @@
 title: Rusty Logs
-description: A modular website for mod updates and changelogs.
+description: A modular site for Rusty's mods
+baseurl: ""
+url: "https://yourusername.github.io"
+markdown: kramdown
+theme: minima

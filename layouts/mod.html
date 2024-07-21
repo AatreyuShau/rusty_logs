@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<section>
+  <h2>Changelogs</h2>
+  {% for changelog in site.mods[page.mod].changelogs %}
+    <article>
+      <h3>{{ changelog.date }}</h3>
+      {{ changelog.content }}
+    </article>
+  {% endfor %}
+</section>
+<section>
+  <h2>Updates</h2>
+  {% for update in site.mods[page.mod].updates %}
+    <article>
+      <h3>{{ update.date }}</h3>
+      {{ update.content }}
+    </article>
+  {% endfor %}
+</section>
+<section>
+  <h2>Downloads</h2>
+  {% for download in site.mods[page.mod].downloads %}
+    <article>
+      <h3>{{ download.name }}</h3>
+      <a href="{{ download.url }}">Download</a>
+    </article>
+  {% endfor %}
+</section>
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    this.page.url = '{{ page.url }}';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = '{{ page.id }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://rusty-logs.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

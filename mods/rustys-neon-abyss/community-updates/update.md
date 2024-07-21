@@ -1,3 +1,6 @@
-# Update 1
-- Fixed bugs related to neon effects.
-- Improved performance.
+---
+date: 2024-07-21
+---
+
+- Released version 1.0 of Rusty's Neon Abyss.
+- Fixed minor bugs.
